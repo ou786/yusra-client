@@ -17,7 +17,9 @@ function Login() {
       const res = await API.post("/auth/login", { email, password });
       localStorage.setItem("accessToken", res.data.accessToken);
       localStorage.setItem("refreshToken", res.data.refreshToken);
-      navigate("/dashboard");
+      setTimeout(() => {
+        navigate("/dashboard");
+      }, 50);
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
     }

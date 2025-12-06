@@ -12,7 +12,7 @@ export default function Navbar() {
   const handleLogout = () => {
     localStorage.removeItem("access_token");
     localStorage.removeItem("refresh_token");
-    navigate("/");
+    setTimeout(()=>navigate("/",{replace:true}),20);
   };
 
   // Determine when to show the Back button

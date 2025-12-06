@@ -9,8 +9,15 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    loadWorkspaces();
-  }, []);
+  const token = localStorage.getItem("access_token");
+  if (!token) return; // avoid blank fetch
+
+  loadWorkspaces();
+}, []);
+
+ if (!localStorage.getItem("access_token")) {
+    return <p className="p-6 text-xl">Loading...</p>;
+  }
 
   const loadWorkspaces = async () => {
     try {
