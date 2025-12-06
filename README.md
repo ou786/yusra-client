@@ -1,16 +1,134 @@
-# React + Vite
+# 🟣 Yusra – A Beautiful, Modern Kanban Productivity App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Yusra is a full-stack Kanban board application designed for smooth task management, workflow organization, and personal productivity.  
+It features a clean UI, intuitive drag-and-drop interactions, and a calm visual theme inspired by the quote:
 
-Currently, two official plugins are available:
+> **“For every hardship, there is ease.” — Surah Ash-Sharh**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Frontend:**  
+🔗 https://yusra-nine.vercel.app  
 
-## Expanding the ESLint configuration
+**Backend:**  
+🔗 https://yusra-server.onrender.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Features
+
+### ✅ Authentication
+- Secure JWT login & register  
+- Protected routes  
+- Auto-redirect based on session  
+
+### ✅ Workspaces
+- Create & delete workspaces  
+- Rename inline  
+- Smooth hover animations  
+- Clean empty-state onboarding UI  
+
+### ✅ Boards
+- Multiple boards per workspace  
+- Interactive grid layout  
+- Inline rename  
+- Hover animations  
+- Smart navigation  
+
+### ✅ Columns
+- Add, rename, and delete columns  
+- Drag & drop reordering  
+- Real-time UI updates  
+
+### ✅ Cards
+- Add, rename, delete cards  
+- Drag between columns  
+- Smooth animations  
+- Instant state update without reload  
+
+### ✅ Global UI Enhancements
+- Animated top quote (changes every 5 seconds)  
+- Sticky navigation bar with Logout  
+- Responsive layout  
+- Minimal, modern Tailwind styling  
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)
+- React Router
+- Tailwind CSS
+- @hello-pangea/dnd (Drag & Drop)
+- Axios
+
+### Backend
+- Node.js / Express
+- MongoDB / Mongoose
+- JWT Authentication
+- Render (deployment)
+
+### Tools
+- Postman (API testing)
+- GitHub
+- Vercel (frontend hosting)
+
+---
+
+## 📁 Project Structure (Client)
+
+src/
+├── api/ # Axios config & API wrappers
+├── components/ # Shared UI components
+├── pages/ # Login, Register, Dashboard, Workspace, Board
+├── assets/ # Images / logos
+├── App.jsx # Routes
+└── main.jsx # Entry point
+
+
+---
+
+## ⚙️ Local Setup
+
+### 1. Clone the project
+```bash
+git clone https://github.com/ou786/yusra-client.git
+cd yusra-client
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Start development server
+```bash
+npm run dev
+```
+
+## Available at
+The app will be available at:
+➡️ http://localhost:5173
+
+---
+
+## 📌 Environment Variables
+
+This frontend currently does not require a .env file.
+API URLs are configured in the Axios instance.
+Backend uses environment variables for:
+MongoDB connection
+JWT secrets
+Email credentials (if required)
+
+---
+
+## 🧑‍💻 Author
+
+Mohammed Osama Ussaid
+Full-Stack Developer — React | Node.js | MongoDB
+
+GitHub: https://github.com/ou786
